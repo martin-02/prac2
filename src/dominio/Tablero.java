@@ -47,6 +47,6 @@ public class Tablero {
 
     @Override
     public String toString() {
-        return "";
+        return ""; //AÑADIR VALOR!!
     }
 }
