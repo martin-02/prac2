@@ -14,7 +14,23 @@ public class Tablero {
     * Lee el estado inicial de un fichero llamado ‘matriz‘.
     ********************************************************/
 
-    public void leerEstadoActual(){}
+    public void leerEstadoActual(){
+        File fichero = new File("Matriz.txt");
+        leerFichero = new Scanner (fichero);
+
+        int i=0;
+        while (leerfichero.hasNextLine()){
+            String fila = leerFichero.nextLine();
+
+            for (int j=0; j < fila.length(); j++){
+                int k = fila.charAt(j);
+                estadoActual[i][j] = k;
+            }
+            
+            i++;
+            System.out.println(fila);
+        }
+    }
     // La secuencia de ceros y unos del fichero es guardada
     // en ‘estadoActual‘ y, utilizando las reglas del juego
     // de la vida, se insertan los ceros y unos
