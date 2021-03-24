@@ -21,7 +21,7 @@ public class Tablero {
     public void leerEstadoActual(){
 
         try {
-            FileReader ficheroLeer = new FileReader("matriz");
+            FileReader ficheroLeer = new FileReader("Matriz.txt");
             Scanner fichero = new Scanner(ficheroLeer);
 
             for (int i = 0; i < DIMENSION; i++) {
