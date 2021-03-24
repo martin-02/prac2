@@ -29,7 +29,7 @@ public class Tablero {
                 String linea = fichero.nextLine();
 
                 for (int j = 0; j < DIMENSION; j++) {
-                    estadoActual [i+1][j+1] = Integer.parseInt(String.valueOf(linea.charAt(j)));
+                    estadoActual [i+1][j+1] = Integer.parseInt(String.valueOf(linea.charAt(j))); //ERROR!!
                 }
             }
 
