@@ -1,6 +1,8 @@
 package dominio;
 
 import java.util.Scanner;
+import java.io.FileReader;
+import java.io.FileNotFoundException;
 
 /**
 * Esta clase es responsable de leer el tablero de un
@@ -21,7 +23,7 @@ public class Tablero {
         try {
             FileReader ficheroLeer = new FileReader("matriz");
             Scanner fichero = new Scanner(ficheroLeer);
-            
+
             for (int i = 0; i < DIMENSION; i++) {
 
                 String linea = fichero.nextLine();
