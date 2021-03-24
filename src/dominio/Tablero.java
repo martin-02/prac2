@@ -6,7 +6,7 @@ package dominio;
 */
 public class Tablero {
 
-    private static int DIMENSION = 30;
+    private static int DIMENSION = 32;
     private int[][] estadoActual; //Matriz que representa el estado actual.
     private int[][] estadoSiguiente = new int[DIMENSION][DIMENSION]; // Matriz que representa el estado siguiente.
 
@@ -15,8 +15,9 @@ public class Tablero {
     ********************************************************/
 
     public void leerEstadoActual(){
+
         File fichero = new File("Matriz.txt");
-        leerFichero = new Scanner (fichero);
+        leerfichero = new Scanner (fichero);
 
         int i=0;
         while (leerfichero.hasNextLine()){
@@ -26,7 +27,7 @@ public class Tablero {
                 int k = fila.charAt(j);
                 estadoActual[i][j] = k;
             }
-            
+
             i++;
             System.out.println(fila);
         }
@@ -41,8 +42,10 @@ public class Tablero {
     * el número es menor que 0,5, entonces la celda está
     * inicialmente viva. En caso contrario, está muerta.
     *******************************************************/
+    public void generarEstadoActualPorMontecarlo(){
 
-    public void generarEstadoActualPorMontecarlo(){}
+    }
+
     // La secuencia de ceros y unos generada es guardada
     // en ‘estadoActual‘ y, utilizando las reglas del juego
     // de la vida, se insertan los ceros y unos
@@ -51,8 +54,10 @@ public class Tablero {
     * Transita al estado siguiente según las reglas del
     * juego de la vida.
     ********************************************************/
+    public void transitarAlEstadoSiguiente(){
 
-    public void transitarAlEstadoSiguiente(){}
+    }
+
     // La variable ‘estadoActual‘ pasa a tener el contenido
     // de ‘estadoSiguiente‘ y, éste útimo atributo pasar a
     // reflejar el siguiente estado.
