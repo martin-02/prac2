@@ -4,7 +4,7 @@
 
 
 # Explicación:
-    El juego de la vida es un conjunto de reglas por las cuales se da paso a una serie de comportamientos muy complejos, en otras palabras, es un modelo matemático que cambia paso a paso.
+    El juego de la vida es un conjunto de reglas por las cuales se da paso a una serie de comportamientos muy complejos, en otras palabras, *es un modelo matemático que cambia paso a paso*.
     Para esto hemos creado una matriz de 30x30, con bordes a los lados. Definiendo las celdas vivas iniciales, podemos proceder a iniciar el juego.
 
 <p align="center">
