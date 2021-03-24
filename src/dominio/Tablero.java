@@ -34,6 +34,7 @@ public class Tablero {
             }
 
             for (int i = 1; i < DIMENSION + 1; i++) {
+                
                 for (int j = 1; j < DIMENSION + 1; j++) {
                     int vecinasVivas = estadoActual [i - 1][j - 1] + estadoActual [i - 1][j] + estadoActual [i - 1][j + 1] + estadoActual [i][j - 1] + estadoActual [i][j + 1]
                     + estadoActual [i + 1][j - 1] + estadoActual [i + 1][j] + estadoActual [i + 1][j + 1];

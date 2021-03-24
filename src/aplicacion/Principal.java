@@ -10,7 +10,7 @@ public class Principal {
 
             Tablero tablero = new Tablero();
             System.out.println("SIMULACION CON TABLERO LEIDO");
-            tablero.leerEstadoActual();
+            tablero.leerEstadoActual(); //ERROR!!
             System.out.println(tablero);
 
             for(int i = 0; i <= 5; i++) {
